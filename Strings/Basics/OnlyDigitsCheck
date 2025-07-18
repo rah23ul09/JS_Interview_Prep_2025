@@ -1,0 +1,10 @@
+let digits = "1234532135"
+let isDigits = true
+
+for(let ch of digits) {
+    if(ch < '0' || ch > '9') {
+        isDigits = false
+        break
+    }
+}
+console.log(isDigits ? "String contains only digits" : "String contains non-digit characters");
